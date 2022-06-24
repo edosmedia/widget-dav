@@ -1,0 +1,104 @@
+.container-widget {
+  position: fixed;
+  right: 10px;
+  bottom: 200px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.caja {
+  width: 300px;
+  height: 400px;
+  background-color: violet;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  /*Ocultador*/
+  margin-bottom: -15px;
+  opacity: 0;
+  visibility: hidden;
+  /*END Ocultador*/
+  transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+}
+
+#btn-mas:checked ~ .caja {
+  margin-bottom: 10px;
+  opacity: 1;
+  visibility: visible;
+}
+.caja hr {
+  border-top: 3px solid #fff;
+}
+
+.caja h4 {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+#pullSupervisores {
+  margin-bottom: 50px;
+}
+.usuarios {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 8px;
+  justify-content: center;
+
+}
+.usuario img {
+  width: 30px;
+  border-radius: 55px;
+  -webkit-border-radius: 55px;
+  -moz-border-radius: 55px;
+  -ms-border-radius: 55px;
+  -o-border-radius: 55px;
+}
+
+#soporte {
+  margin-top: 20px;
+}
+
+#soporte p {
+  font-size: 2rem;
+}
+#btn-mas {
+  display: none;
+}
+.boton {
+  text-align: right;
+}
+.boton > label {
+  cursor: pointer;
+  width: 55px;
+  height: 55px;
+  background-color: blueviolet;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  line-height: 55px !important;
+  text-align: center !important;
+  color: #fff;
+  transition: all 500ms ease;
+  overflow: hidden;
+}
+
+#btn-mas:checked ~ .boton label {
+  transform: rotate(360deg);
+  font-size: 25px;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+}
